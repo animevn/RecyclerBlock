@@ -2,6 +2,7 @@ package com.haanhgs.recyclerblockdemo;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,8 @@ import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import static android.text.Layout.JUSTIFICATION_MODE_INTER_WORD;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
@@ -33,6 +36,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         Song song = songs.get(position);
         holder.tvID.setText(String.format("%s", position + 1));
         holder.tvSong.setText(song.getDetail());
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            holder.tvSong.setJustificationMode(JUSTIFICATION_MODE_INTER_WORD);
+        }
     }
 
     @Override
