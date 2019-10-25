@@ -5,8 +5,12 @@ import java.util.List;
 
 public class CreateSongList {
 
-    public static List<Song> songs = new ArrayList<>();
+    private static List<Song> songs = new ArrayList<>();
     private static final int COUNT = 7;
+
+    public static List<Song> getSongs() {
+        return songs;
+    }
 
     private static void addSong(Song song){
         songs.add(song);

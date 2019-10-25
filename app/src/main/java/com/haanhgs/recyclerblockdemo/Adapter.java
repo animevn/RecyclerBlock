@@ -1,6 +1,7 @@
 package com.haanhgs.recyclerblockdemo;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,6 +49,15 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             super(itemView);
             tvID = itemView.findViewById(R.id.tvID);
             tvSong = itemView.findViewById(R.id.tvSong);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(App.context(), DetailActivity.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    intent.putExtra("ID", getAdapterPosition());
+                    App.context().startActivity(intent);
+                }
+            });
         }
     }
 }
