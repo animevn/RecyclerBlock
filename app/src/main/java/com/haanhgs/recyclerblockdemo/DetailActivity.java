@@ -20,7 +20,8 @@ public class DetailActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.tbrDetail);
         setSupportActionBar(toolbar);
 
-
+        //set this so when click back arrow in action bar will return to main activity
+        //should set parent activity to be mainactivity
         if (getSupportActionBar() != null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
