@@ -5,7 +5,7 @@ import java.util.List;
 
 public class CreateSongList {
 
-    private static List<Song> songs = new ArrayList<>();
+    private static final List<Song> songs = new ArrayList<>();
     private static final int COUNT = 7;
 
     public static List<Song> getSongs() {

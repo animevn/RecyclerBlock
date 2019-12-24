@@ -17,7 +17,7 @@ import static android.text.Layout.JUSTIFICATION_MODE_INTER_WORD;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
-    private List<Song> songs;
+    private final List<Song> songs;
 
     public Adapter(List<Song> songs){
         this.songs = songs;
@@ -48,8 +48,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView tvID;
-        private TextView tvSong;
+        private final TextView tvID;
+        private final TextView tvSong;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

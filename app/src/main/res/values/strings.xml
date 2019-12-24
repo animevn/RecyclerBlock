@@ -1,10 +1,10 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Song Details</string>
-    <string name="title_song_detail">Song Detail</string>
+    <string name="title_song_detail" tools:keep="@string/title_song_detail">Song Detail</string>
     <string name="article_title">Beatles Anthology Vol. 1</string>
     <string name="article_subtitle">Behind That Locked Door: Beatles Rarities!</string>
-    <string name="beatles">Beatles</string>
-    <string name="imageError">haha</string>
+    <string name="beatles" tools:keep="@string/beatles">Beatles</string>
+    <string name="imageError" tools:keep="@string/imageError">haha</string>
 
     <string name="title0">Cry for a Shadow</string>
     <string name="title1">My Bonnie - Ain’t She Sweet</string>
