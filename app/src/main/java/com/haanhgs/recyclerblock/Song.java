@@ -1,4 +1,4 @@
-package com.haanhgs.recyclerblockdemo;
+package com.haanhgs.recyclerblock;
 
 public class Song {
 

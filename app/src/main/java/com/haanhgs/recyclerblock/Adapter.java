@@ -1,4 +1,4 @@
-package com.haanhgs.recyclerblockdemo;
+package com.haanhgs.recyclerblock;
 
 import android.content.Context;
 import android.content.Intent;

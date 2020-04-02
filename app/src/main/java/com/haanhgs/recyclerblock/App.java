@@ -1,4 +1,4 @@
-package com.haanhgs.recyclerblockdemo;
+package com.haanhgs.recyclerblock;
 
 import android.app.Application;
 import android.content.Context;
@@ -11,7 +11,7 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        context = new WeakReference<Context>(this);
+        context = new WeakReference<>(this);
     }
 
     public static Context appContext(){

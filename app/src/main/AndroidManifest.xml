@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
-    package="com.haanhgs.recyclerblockdemo">
+    package="com.haanhgs.recyclerblock">
 
     <dist:module dist:instant="true" />
 
     <application
-        android:name=".App"
+        android:name="com.haanhgs.recyclerblock.App"
         android:allowBackup="true"
         android:fullBackupContent="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,7 +16,7 @@
         android:theme="@style/AppTheme.NoActionBar">
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.haanhgs.recyclerblock.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,8 +26,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SongDetailActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="com.haanhgs.recyclerblock.SongDetailActivity"
+            android:parentActivityName="com.haanhgs.recyclerblock.MainActivity"
             >
 
         </activity>
